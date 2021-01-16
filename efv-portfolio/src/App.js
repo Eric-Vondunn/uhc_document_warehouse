@@ -8,10 +8,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* Uses a header that scrolls with the text, rather than staying locked at the top */}
         <div className="demo-big-content">
           <Layout>
-            <Header title="Portfolio" scroll>
+            <Header
+              className="header-color"
+              title={
+                <Link style={{ textDecoration: "none", color: "white" }} to="/">
+                  Portfolio
+                </Link>
+              }
+              scroll
+            >
               <Navigation>
                 <Link to="/resume">Resume</Link>
                 <Link to="/aboutMe">About Me</Link>
@@ -19,7 +26,13 @@ class App extends Component {
                 <Link to="/contact">Contact</Link>
               </Navigation>
             </Header>
-            <Drawer title="Portfolio">
+            <Drawer
+              title={
+                <Link style={{ textDecoration: "none", color: "black" }} to="/">
+                  Portfolio
+                </Link>
+              }
+            >
               <Navigation>
                 <Link to="/resume">Resume</Link>
                 <Link to="/aboutMe">About Me</Link>
