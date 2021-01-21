@@ -5,6 +5,11 @@ class Contact extends Component {
     return (
       <div>
         <h1>Contact</h1>
+        <ul>
+          <li>Email</li>
+          <li>Linkedin</li>
+          <li>Github</li>
+        </ul>
       </div>
     );
   }
