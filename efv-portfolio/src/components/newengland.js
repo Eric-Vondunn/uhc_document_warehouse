@@ -1,13 +1,24 @@
 import React, { Component } from 'react'
 
-class Landing extends Component {
+class newEngland extends Component {
   render() {
     return (
       <div>
-        <h1>UHC FAM SMALL GROUP DOCUMENT WAREHOUSE</h1>
-        <p>
-          <img src=""></img>
-        </p>
+        <h1 align="center">New England</h1>
+
+        <h2>Massachusettes</h2>
+        <ul>
+          <li>Product Grid</li>
+          <li>Underwriting Guidelines</li>
+          <li>Enrollment Forms</li>
+        </ul>
+
+        <h2>Rhode Island</h2>
+        <ul>
+          <li>Product Grid</li>
+          <li>Underwriting Guidelines</li>
+          <li>Enrollment Forms</li>
+        </ul>
         <footer>
           **Please ensure you are confirming with your assigned UHC
           representative that the version of the document you have selected is
@@ -19,4 +30,4 @@ class Landing extends Component {
     )
   }
 }
-export default Landing
+export default newEngland
